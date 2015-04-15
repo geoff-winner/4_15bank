@@ -9,18 +9,31 @@
   </head>
   <body>
      <center>
-    <div class ="container">
-    <form id='input'>
-        <div class="form-group">
-            <label id='input'>Enter a :</label>
-            <input id='input' name='input' type='text'>
+         <h1>Bank of the West</h1>
+    <div class ="container-fluid">
+        <form id='create'>
+            <div class="form-group">
+                <label id='name'></label>
+                <input id='name' name='name' type='text' placeholder='Enter your name'>
+                <label id='inideposit'></label>
+                <input id='inideposit' name='inideposit' type='number' placeholder='Enter deposit amount'>
+            </div>
+            <button type='submit' class='btn btn-success'>Create bank account</button>
+        </form>
+        <form id='withdep'>
+            <div class="withdraw">
+                <h3><span class='name'></span></h3>
+                <h3><span class='inideposit'></span></h3>
+                <label for='deposit'></label>
+                <input id='deposit' name='deposit' type='number' placeholder='Deposit Amount'>
+                <label for='withdrawal'></label>
+                <input id='withdrawal' name='withdrawal' type='number' placeholder='Withdrawal Amount'><br>
+                <button type='submit' class='btn btn-success'>Accept</button>
+            </div>
+        </form>
         </div>
-        <button type='submit' class='btn btn-success'>Submit</button>
-    </form>
     </div>
-        <div id='result'>
-            <p>Your word is worth <span class='total_score'></span> points.</p>
-        </div>
+
     </center>
   </body>
 </html>
